@@ -4,7 +4,7 @@
 /** 
  * main - Entry point
  *
- * Return: 0 if successful
+ * Return:0 if successful
  */
 
 int main(void)
@@ -15,15 +15,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n < 0)
 	{
-		printf("The number: %d is %s\n", n, "negative");
+		printf("%dis%s\n", n, "negative");
 	}
 	else if (n > 0)
 	{
-		printf("The number: %d is %s\n", n, "positive");
+		printf("%dis%s\n", n, "positive");
 	}
 	else
 	{
-		printf("The number : %d is %s\n", n, "Zero");
+		printf("%dis%s\n", n, "Zero");
 	}
 	return (0);
 }
