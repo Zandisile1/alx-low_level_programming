@@ -2,11 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 /** 
- *main - Entry point
- *
- *Return:0 if successful
- */
-
+* main - Entry point
+*
+* Return:0 if successful
+*/
 int main(void)
 {
 int n;
@@ -23,7 +22,7 @@ printf("%d is %s\n", n, "positive");
 }
 else
 {
-printf("%d is %s\n", n, "Zero");
+printf("%d is %s\n", n, "zero");
 }
 return (0);
 }
