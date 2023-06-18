@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* Main - Entry point
+* main - Entry point
 *
 * Description: 'The program prints all numbers of base 10'
 * Parameter: from 0-10;
