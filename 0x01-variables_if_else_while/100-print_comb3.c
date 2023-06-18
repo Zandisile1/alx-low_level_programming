@@ -1,39 +1,27 @@
-#include <stdio.h>
-
+#include<stdio.h>
 /**
-* main - function to display two numbers.
-*
-* Return:0 if sucessful.
-*/
-
+ * main - Entry point
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-int i = '0';
-int j = '0';
+int a, b;
+for (a = 48; a <= 56; a++)
 {
-while (i <= '9')
+for (b = 49; b <= 57; b++)
 {
-while (j <= '9')
+if (b > a)
 {
-if (!(i > j) || (i == j))
-{
-putchar(i);
-putchar(j);
-if (i == '8' && j == '9')
-{
-putchar('\n');
-}
-else
+putchar(a);
+putchar(b);
+if (a != 56 || b != 57)
 {
 putchar(',');
 putchar(' ');
 }
 }
 }
-j++;
 }
-j = '0';
-i++;
-}
+putchar('\n');
 return (0);
 }
