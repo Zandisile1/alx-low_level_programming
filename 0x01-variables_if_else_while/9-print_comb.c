@@ -6,8 +6,9 @@
  *
  * Return:0 if sucessful
  */
+
 /* betty style code for function main goes here*/
-int main(void)
+int main(void) /*Description: Main function*/
 {
 int i = '0';
 while (i <= '9')
