@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* Main - function to display two numbers.
+* main - function to display two numbers.
 *
 * Return:0 if sucessful.
 */
