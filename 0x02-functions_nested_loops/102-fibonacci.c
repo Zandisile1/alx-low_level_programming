@@ -15,7 +15,7 @@ printf("%ld,%ld", num1, num2);
 for (x = 0; x < 48; x++)
 {
 lastnum = num1 + num2;
-printf("%ld", lastnum);
+printf(",%ld", lastnum);
 num1 = num2;
 num2 = lastnum;
 }
