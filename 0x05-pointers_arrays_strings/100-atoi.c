@@ -9,29 +9,35 @@
 
 int _atoi(char *s)
 {
-	int a = 0;
-	unsigned int b = 0;
-	int start = 0;
-	int isi = 0;
+	int x, y, n, leng, z, num;
 
-	while (s[a])
+	x = 0;
+	y = 0;
+	n = 0;
+	leng = 0;
+	z = 0;
+	num = 0;
+
+	while (s[leng] != '\0')
+		leng++;
+	while (x < leng && z == 0)
 	{
-	if (s[a] == 45)
-	{
-	start *= -1;
+		if (s[x] == '-')
+		++y;
+		if (s[x] >= '0' && s[x] <= '9')
+		{
+		num = s[x] - '0';
+		if (y % 2)
+		num = -num;
+		n = n * 10 + num;
+		z = 1;
+		if (s[x + 1] < '0' || s[x + 1] > '9')
+		break;
+		z = 0;
+		}
+		x++;
 	}
-	while (s[a] >= 48 && s[a] <= 57)
-	{
-	isi = 1;
-	b = (b * 10) + (s[a] - '0');
-	a++;
-	}
-	if (isi == 1)
-	{
-	break;
-	}
-	a++;
-	}
-	b *= start;
-	return (b);
+	if (z == 0)
+	return (0);
+	return (n);
 }
