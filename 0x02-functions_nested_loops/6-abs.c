@@ -9,12 +9,13 @@
 
 int _abs(int c)
 {
-if (c < 0)
-{
+int b = c;
 int abs_val;
 
-abs_val = c * -1;
-return (abs_val);
+if (b < 0)
+{
+b = b * (-1);
 }
-return (c);
+abs_val = b;
+return (abs_val);
 }
